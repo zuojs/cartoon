@@ -1,0 +1,71 @@
+/*通用样式*/
+a{
+    color: #484848;
+}
+a:hover {
+    color: #69ffd3;
+    text-decoration: none;
+}
+*:focus { outline: none; }
+/*背景*/
+.background {
+    position: relative;
+    margin: 0 auto;
+}
+.background img{
+    height: 1280px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.8;
+}
+#pass {
+    float: right;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #ff331d;
+    font-style: italic;
+}
+/*播放器*/
+#a1 {
+    background-color: #ccc;
+    width: 600px;
+    height: 400px;
+    cursor: pointer;
+    margin: 100px auto;
+    z-index: 100;
+    position: absolute;
+    left: 650px;
+    border: 15px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*剧集*/
+div.episodes {
+    float: left;
+    width: 96%;
+    position: absolute;
+    top: 600px;
+    z-index: 100;
+    padding: 20px;
+    border: 20px solid rgba(105, 255, 123, 0.68);
+    border-radius: 20px;
+
+}
+div.episodes li {
+    float: left;
+    line-height: 30px;
+    width: 50px;
+    height: 20px;
+    padding: 0 10px 20px 10px;
+}
+div.episodes li a {
+    font-size: 15px;
+    background: white;
+    border: 2px solid #69ffd3;
+    border-radius: 5px;
+}
+div.episodes li a:hover {
+    color: #69ffd3;
+    text-decoration: none;
+}

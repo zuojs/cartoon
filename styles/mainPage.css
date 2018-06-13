@@ -1,0 +1,468 @@
+/*通用样式*/
+a{
+    color: #484848;
+}
+a:hover {
+    color: #69ffd3;
+    text-decoration: none;
+}
+*:focus { outline: none; }
+#tooltip {
+    width: 200px;
+    border: solid 2px #948fce;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #9cfffc;
+    font: 17px italic;
+    color: #020202;
+    text-align: center;
+    display:none;
+}
+/*头部样式开始*/
+/*@media screen and (min-width: 600px){ 响应式布局*/
+#header {
+    height: 105px;
+    background: #FFFFFF;
+}
+#header .contWidth {
+    height: 105px;
+    width: 990px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    margin: 0 auto;
+    z-index: 100;
+    overflow: hidden;
+}
+#header .logo {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #FFF;
+    line-height: 80px;
+}
+#header .search {
+    position: absolute;
+    left: 198px;
+    top: 20px;
+}
+#inputSearch {
+    padding: 3px 6px 5px 6px;
+    height: 17px;
+    width: 200px;
+    font-size: 14px;
+    color: #948fce;
+    border: 2px solid;
+    border-radius: 5px;
+}
+#inputSearch .focus {
+    outline: 1px solid #fff;
+}
+.dragon {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    right: 140px;
+    top: -17px;
+}
+.person {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+/*皮肤样式*/
+#skin {
+    float: right;
+    margin: 10px;
+    padding: 4px;
+    width: 120px;
+}
+#skin li {
+    float: left;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    background-image: url("../images/color.gif");
+}
+#skin_0 { background-position: 0px 0px; }
+#skin_1 { background-position: 15px 0px; }
+#skin_2 { background-position: 35px 0px; }
+#skin_3 { background-position: 55px 0px; }
+#skin_4 { background-position: 75px 0px; }
+#skin_5 { background-position: 95px 0px; }
+#skin_0.selected { background-position: 0px 15px;}
+#skin_1.selected { background-position: 15px 15px;}
+#skin_2.selected { background-position: 35px 15px;}
+#skin_3.selected { background-position: 55px 15px;}
+#skin_4.selected { background-position: 75px 15px;}
+#skin_5.selected { background-position: 95px 15px;}
+/*导航样式*/
+#nav {
+    position: absolute;
+    top:68px;
+    left:-1px;
+    width: 990px;
+    height:40px;
+    line-height:40px;
+    z-index: 100;
+    -webkit-box-shadow: 3px 3px 3px;
+    -moz-box-shadow: 3px 3px 3px;
+    -o-box-shadow: 3px 3px 3px;
+    box-shadow: 0px 0px 3px;
+    border: 1px dotted #ecf2ff;
+}
+#nav ul li {
+    float: left;
+    display: inline;
+    padding: 0 0 0 52px;
+    z-index: 100;
+}
+#nav ul li a {
+    display: block;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+#nav ul li a:hover {
+    color: #303030;
+    text-decoration: none;
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+/*导航样式结束*/
+/*头部样式结束*/
+
+/*主体样式开始*/
+#content {
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+    height: 1032px;
+}
+/*主题大海报开始*/
+#Poster{
+    height: 410px;
+    width: 990px;
+    position: relative;
+    float: left;
+    margin: 7px 0 0 0;
+    overflow: hidden;
+}
+#posterWrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#Poster div {
+    position: absolute;
+    bottom: 10px;
+    left: 192px;
+    float: left;
+}
+#Poster div a {
+    float: left;
+    height: 81px;
+    width: 104px;
+    overflow: hidden;
+    margin-right: 19px;
+    padding: 1px 0;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid white;
+    background-color: #444444;
+}
+#Poster div a:hover {
+    text-decoration: none;
+}
+
+#Poster div a img {
+    height: 81px;
+    width: 113px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+#Poster .last {
+    margin: 0;
+    width: 113px;
+}
+#Poster a.chos {
+    border: 2px solid white;
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+/*主题大海报结束*/
+
+/*影片分类开始*/
+.puCatalogue {
+    clear: left;
+    float: left;
+    width: 330px;
+    overflow: hidden;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+.puCatalogue h2 {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    text-indent: 15px;
+    font-style: italic;
+}
+.puCatalogue h2 .dm {
+    float: right;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #7effc4;
+    font-style: italic;
+}
+#puCatalogInfo {
+    height: 266px;
+    width: 330px;
+}
+#puCatalogInfo li {
+    line-height: 30px;
+    font-size: 14px;
+    padding: 6px 204px 0 0;
+}
+#puCatalogInfo li a {
+    display: block;
+    text-align: center;
+    font: 20px/1.5 tahoma,arial,\5b8b\4f53;
+}
+#puCatalogInfo li a:hover {
+    text-decoration: none;
+    -moz-transform: translateX(50px) scale(1.5,1.5);
+    -ms-transform: translateX(50px) scale(1.5,1.5);
+    -o-transform: translateX(50px) scale(1.5,1.5);
+    -webkit-transform: translateX(50px) scale(1.5,1.5);
+    transform: translateX(50px) scale(1.5,1.5);
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+/*动漫分类*/
+#puSearch select {
+    width: 200px;
+    height: 25px;
+    display: block;
+    margin: 10px 0 0 13px;
+    border: 1px solid #948fce;
+    border-radius: 5px;
+}
+#puSearch select option{
+    font-size: 15px;
+    background-color: #ccc;
+}
+#puSearch #psearch {
+    width: 200px;
+    height: 25px;
+    display: block;
+    margin: 0 0 0 13px;
+    border: 1px solid #948fce;
+    border-radius: 5px;
+    text-indent: 3px;
+}
+#puSearch #submit {
+    width:100px;
+    height:25px;
+    display: block;
+    margin: 0 0 0 13px;
+    border: 1px solid #948fce;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/*征稿动漫*/
+#collect {
+    width: 330px;
+    height: 159px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+}
+.collectInfo li p{
+    margin-top: 10px;
+    display: block;
+    text-indent: 30px;
+    font-size: 15px;
+    color: #484848;
+    line-height: 20px;
+}
+/*动漫推荐开始*/
+#puIntroduce {
+    float: right;
+    width: 650px;
+    overflow: hidden;
+    margin:10px 0 10px 0;
+    position: relative;
+}
+#puIntroduce h2 {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    text-indent: 15px;
+    font-style: italic;
+}
+#puIntroduce h2 #dm {
+    float: right;
+    padding-right: 30px;
+    font-size:27px;
+    color: #7effc4;
+    font-style: italic;
+}
+#puIntroduLast h2 .more {
+    float: right;
+    font-size: 10px;
+    margin-right:2px;
+}
+#puIntroduInfo {
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#puIntroduInfo ul {
+    margin-top: 15px;
+}
+#puIntroduInfo li {
+    float: left;
+    line-height: 10px;
+}
+#puIntroduInfo li a img {
+    width: 200px;
+    height: 110px;
+    border: none;
+}
+#puIntroduInfo li .wh {
+    padding: 0 24px 0 24px;
+}
+#puIntroduInfo li span {
+    line-height: 30px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+#puIntroduInfo li span a:hover{
+    text-decoration: none;
+    color: #69ffd3;
+}
+/*换页*/
+.changePage{
+    width: 650px;
+    height: 30px;
+    background-color: #ccc;
+}
+.changePage li {
+    line-height: 30px;
+    padding: 0 20px;
+    float: left;
+}
+.changePage li span {
+    display: block;
+    text-align: center;
+}
+
+.changePage li a {
+    text-decoration: none;
+}
+#puIntroduLast {
+    height: 130px;
+    position: relative;
+    margin-top: 10px;
+}
+#puIntroduLast div {
+    width: 210px;
+    float: left;
+}
+#puIntroduLast a:hover {
+    text-decoration: none;
+}
+#puIntroduLast #Japan {
+    padding: 0 10px 0 10px;
+}
+/*动漫推荐结束*/
+/*主体样式结束*/
+
+/*底部样式开始*/
+#footer {
+    padding: 10px 0 0 0;
+    line-height: 20px;
+    overflow: hidden;
+    width: 990px;
+    text-align: center;
+    color: #666666;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+#footer a:hover {
+    text-decoration: none;
+}
+/*底部样式结束*/
+
+/*登录界面*/
+.code,.login {
+    position: fixed;
+    right: 650px;
+    top: 154px;
+    width: 430px;
+    height: 200px;
+    z-index: 999;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 30px #ccc;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+form div { margin:20px 0;}
+.int label {
+    float:left;
+    width:100px;
+    text-align:right;
+    font-size: 15px;
+}
+.int input {
+    padding:1px 1px;
+    border:1px solid #ccc;
+    height:16px;
+}
+.sub { padding-left:100px;}
+.sub input { margin-right:10px; }
+.formtips{
+    width: 200px;
+    margin:2px;
+    padding:2px;
+}
+.onError{
+    background:#FFE0E9 url(../images/code/reg3.gif) no-repeat 0 center;
+    padding-left:25px;
+}
+.onSuccess{
+    background: #E9FBEB url(../images/code/reg4.gif) no-repeat 0 center;
+    padding-left: 25px;
+}
+.high{
+    color: red;
+}
+#logout {
+    color: red;
+}
